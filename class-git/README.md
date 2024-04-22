@@ -243,7 +243,7 @@ touch historia.txt
 
 code .
 
-#Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido     mi nombre es Ariel (coloca tu nombre)
+#Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido mi nombre es Ariel (coloca tu nombre)
 
 ctrl + s
 
