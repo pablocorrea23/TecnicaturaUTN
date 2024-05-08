@@ -23,3 +23,5 @@ print('Mi dia estuvo de: ',pregunta)
 preguntaTitulo = input('Proporciona el titulo: ')
 preguntaAutor = input('Proporciona el autor: ')
 print(preguntaTitulo, 'fue escrito por', preguntaAutor)
+
+
