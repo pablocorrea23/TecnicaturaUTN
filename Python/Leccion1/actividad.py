@@ -5,9 +5,9 @@
 # Mi día estuvo de: 10
 # Hacer el código
 # Debes hacerlo en PyCharm y también en el celular y en la terminal de Python...
-print('¿Como estuvo tu día (1 al 10)?')
-pregunta = input('Ingrese un Numero: ')
-print('Mi dia estuvo de: ',pregunta)
+# print('¿Como estuvo tu día (1 al 10)?')
+# pregunta = input('Ingrese un Numero: ')
+# print('Mi dia estuvo de: ',pregunta)
 
 # Ejercicio 2: 
 # Se solicita incluir la siguiente información acerca de un libro:
@@ -20,8 +20,15 @@ print('Mi dia estuvo de: ',pregunta)
 # Preguntas de esta tarea
 # ¿Cuál es el código del requerimiento solicitado?
 
-preguntaTitulo = input('Proporciona el titulo: ')
-preguntaAutor = input('Proporciona el autor: ')
-print(preguntaTitulo, 'fue escrito por', preguntaAutor)
+# preguntaTitulo = input('Proporciona el titulo: ')
+# preguntaAutor = input('Proporciona el autor: ')
+# print(preguntaTitulo, 'fue escrito por', preguntaAutor)
 
+#ejercicio2:
 
+# a = 5000
+# b = 50
+
+# resultado = ((3+5 *8) < 3 and ((-6/3*4) +2 <2)) or (a > b)
+
+# print(resultado)
