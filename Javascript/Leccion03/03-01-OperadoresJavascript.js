@@ -14,3 +14,16 @@ if (edad >= adulto) {
 } else {
     console.log("Es menor de edad");
 }
+
+//ejerciico dentro de un rango
+let dentroRango = 10;
+let min = 0;
+let max = 40;
+
+if(dentroRango >= min && dentroRango <= max){
+    console.log("Dentro del rango");
+}
+else{
+    console.log("Fuera del rango");
+}
+
