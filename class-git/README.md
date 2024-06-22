@@ -363,7 +363,7 @@ Profesor Ariel Betancud
 # CLASE 5 MIÉRCOLES 8 DE MAYO DEL 2024
 
 
-<sub> Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6 </sub>
+ Volver en el tiempo en nuestro repositorio utilizando reset y checkout parte 6 
 
 > Ingresamos de la siguiente manera:
 
@@ -500,7 +500,7 @@ cd ..
 ## GIT RESET
 
 
-<sub>
+
 El comando git reset es una herramienta poderosa que te permite deshacer o revertir cambios en tu repositorio de Git. Lo puedes ejecutar de tres maneras diferentes, con las líneas de commando --soft, --mixed y --hard.
 
 Pero como git checkout que nos deja ir, mirar, pasear y volver. Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
@@ -512,7 +512,7 @@ La mejor forma de entender estos mecanismos es creando un conjunto de cambios en
 Ingresamos de la siguiente manera:
 
 Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
-</sub>
+
 
 > TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 
@@ -531,13 +531,12 @@ git add reset_file.txt
 git commit -m"Iniciando el primer commit"
 ```
 
-<sub>
-¿Cómo funciona Git Reset en tu flujo de trabajo? 
+
+### ¿Cómo funciona Git Reset en tu flujo de trabajo? 
 
 Git reset permite moverte entre diferentes commits para deshacer o rehacer cambios. Git guarda todo lo nuevo del repositorio como commits, que son instantáneas del estado del código en un momento dado y existen variaciones de este comando.
 
-Variaciones de Git Reset 
-</sub>
+### Variaciones de Git Reset 
 
 ```sh
 git reset --soft: Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit. 
@@ -581,7 +580,7 @@ Con git rm eliminamos un archivo de Git, pero mantenemos su historial de cambios
 Empleando git reset HEAD, movemos los cambios de Staging a Unstaged, pero mantenemos el archivo en el repositorio con los últimos cambios en los que hicimos commit. Así, no perdemos nada relevante.
 ```
 
-<sub>
+
 Siguientes pasos Bueno, todos los cambios están en el área de Staging, incluido el archivo con los cambios que no están listos. Esto significa que debemos sacar ese archivo de Staging para poder hacer commit de todos los demás.
 
 Crear cambios en el archivo creado, donde vamos a hacer varios commits, para ir probando los nuevos comandos, al finalizar las pruebas, eliminar el directorio con todo su contenido.
@@ -592,7 +591,6 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 
 Dante Nicolás Martinez
-</sub>
 
 > Introducción
 
@@ -605,19 +603,16 @@ Dante Nicolás Martinez
 > PDF
 
 
-<sub>
 Revisar y ejecutar cada comando, hacerlo como practica
 
 Profesor Ariel Betancud
-</sub>
-
 
 
 # CLASE 7 MIÉRCOLES 22 DE MAYO DEL 2024
 
 > Flujo de trabajo básico con un repositorio remoto parte 8
 
-<sub>
+
 Cuando empiezas a trabajar en un entorno local, el proyecto vive únicamente en tu computadora. Esto significa que no hay forma de que otros miembros del equipo trabajen en él.
 
 Para solucionar esto, utilizamos los servidores remotos: un nuevo estado que deben seguir nuestros archivos para conectarse y trabajar con equipos de cualquier parte del mundo.
@@ -626,8 +621,7 @@ Estos servidores remotos pueden estar alojados en GitHub, GitLab, BitBucket, ent
 
 Esto significa que debes aprender algunos nuevos comandos
 
-Comandos para trabajo remoto con GIT
-</sub>
+### Comandos para trabajo remoto con GIT
 
 
 ```sh
@@ -678,8 +672,6 @@ git log -S “Por contenido” #Buscar los commits con el contenido dentro del a
 git log > log.txt #guardar los logs en un archivo txt
 ```
 
-
-<sub>
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
@@ -687,7 +679,6 @@ Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 Dante Nicolás Martinez
 
 Parte 2:
-</sub>
 
 > Introducción
 
@@ -699,34 +690,27 @@ Parte 2:
 
 > PDF
 
-<sub>
+
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
 
 Profesor Ariel Betancud
-
-</sub>
-
-
-
-
 
 # CLASE 8 MIÉRCOLES 29 DE MAYO DEL 2024
 
 ### Introducción a las ramas o branches de Git parte 9
 
-<sub>
-Cuando entramos en el proyecto veremos que nos encontramos con la rama master, y es a partir de allí que debe saber que esta es la rama madre o principal rama, y las otras ramas se crean para no afectar a la master
+Cuando entramos en el proyecto veremos que nos encontramos con la rama `master`, y es a partir de allí que debe saber que esta es la rama madre o principal rama, y las otras ramas se crean para no afectar a la `master`
 
 
-Las ramas (branches) son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
+Las ramas `(branches)` son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 
-La cabecera o HEAD representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (git reset id-commit, git checkout rama-o-id-commit).
+La `cabecera` o `HEAD` representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos (git reset id-commit, git checkout rama-o-id-commit).
 
-Repasa: ¿Qué es Git?
+## Repasa: ¿Qué es Git?
 
-Cómo funcionan las ramas en GIT
+### Cómo funcionan las ramas en GIT
 Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
-</sub>
+
 
 ```sh
 git branch nombre de la rama #Con este comando se genera una nueva rama.
@@ -740,9 +724,7 @@ git reset id-commit #Nos lleva a cualquier commit no importa la rama, ya que ide
 git checkout rama-o-id-commit #Nos lleva a cualquier commit sin borrar los commit posteriores al tag seleccionado.
 ```
 
-<sub>
 Vamos a hacer una practica: mientras la rama master esta cambiando normalmente, vamos a crear una rama paralela que va a crear nuevas secciones: osea una sección y a esta rama la vamos a llamar segunda y con esto, la vamos a fusionar para ver como queda en la rama master y así entender el flujo de ramas entre git. Al crear otra rama estamos creando una copia de todos los commit que ya tiene la rama master en la nueva rama y todos los cambios que hagamos en esta nueva rama, no los va a ver la rama master hasta que no la volvamos a fusionar con un proceso que se llama merge.
-</sub>
 
 ```sh
 Abrir terminal #En ubuntu
@@ -808,14 +790,12 @@ git status #Veremos en que HEAD estamos apuntando
 VSC #hacemos cambios que veremos con Nico
 ```
 
-<sub>
 Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 
 
 Dante Nicolás Martinez
 
 Parte 2:
-</sub>
 
 > Introducción
 
@@ -867,46 +847,34 @@ git checkout segunda #Volvemos a ver todos los cambios que hicimos de nuevo
 ```
 
 
-<sub>
-La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
-
-
+La tarea de hoy, agregar esta clase al `README.md` con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
 
 Profesor Ariel Betancud
-</sub>
 
 # CLASE 9 MIÉRCOLES 5 DE JUNIO DEL 2024
 
 ### Fusión de ramas con Git merge parte 10
 
-<sub>
 La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
 
 Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
-</sub>
 
 ### Funcionamiento de Git merge
 
-<sub>
 Git merge fusiona secuencias de confirmaciones en un solo historial, generalmente para combinar dos ramas. Busca una confirmación de base común y genera una confirmación de fusión que representa la combinación de las dos ramas hasta el resultado final.
-</sub>
 
 ![Imagen de funcionamiento de git merge](./img/git2.jpeg)
 
 
 ### ¿Cómo unir dos ramas en git?
 
-<sub>
 Ahora bien, para combinar ramas en tu repositorio local, usa git checkout para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea git merge y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.
-</sub>
 
 ### ¿Cómo realizar un merge en git?
 
-<sub>
 Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando git merge seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama segunda, usa este comando:
-</sub>
 
 ```sh
 git checkout master
@@ -914,15 +882,13 @@ git checkout master
 git merge segunda
 ```
 
-<sub>
-Es importante tener en cuenta que en caso de haber conflictos, debes guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo. También es recomendable emplear los comandos básicos de GitHub, como git fetch, git push y git pull, para mantener actualizado tu repositorio.
+Es importante tener en cuenta que en caso de haber conflictos, debes guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo. También es recomendable emplear los comandos básicos de GitHub, como `git fetch`, `git push` y `git pull`, para mantener actualizado tu repositorio.
 
 En este ejemplo, vamos a crear un nuevo commit en la rama master combinando los cambios de una rama llamada segunda: Otra opción es crear un nuevo commit en la rama segunda combinando los cambios de cualquier otra rama:
 
 Git es asombroso porque puede saber cuáles cambios deben conservarse en una rama y cuáles no. En casos de conflictos, asegúrate de guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo.
 
-Comandos básicos de GitHub:
-</sub>
+### Comandos básicos de GitHub:
 
 
 ```sh
@@ -1024,13 +990,11 @@ git merge segunda #y terminamos con esto
 
 ### PORTAFOLIO
 
-<sub>
 Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 
 Dante Nicolás Martinez
 
 Parte 4:
-</sub>
 
 > Introducción
 
@@ -1042,14 +1006,12 @@ Parte 4:
 
 > PDF
 
-<sub>
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
 
 Profesor Ariel Betancud
 
-</sub>
 
 
 # CLASE 10 MIÉRCOLES 12 DE JUNIO DEL 2024
@@ -1060,7 +1022,6 @@ Profesor Ariel Betancud
 
 ### Sección lectura
 
-<sub>
 Git nunca borra nada, a menos que nosotros se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama o creando un nuevo commit, no borrando ramas ni commits (recuerda que puedes borrar commits con git reset y ramas con git branch -d).
 
 Git es muy inteligente y puede resolver algunos conflictos automáticamente: cambios, nuevas líneas, entre otros. Pero algunas veces no sabe cómo resolver estas diferencias, por ejemplo, cuando dos ramas diferentes hacen cambios distintos a una misma línea.
@@ -1071,8 +1032,7 @@ Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del 
 
 Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged. Solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.
 
-Cómo revertir un merge Si nos hemos equivocado y queremos cancelar el merge, debemos usar el siguiente comando:
-</sub>
+### Cómo revertir un merge Si nos hemos equivocado y queremos cancelar el merge, debemos usar el siguiente comando:
 
 ```sh
 git merge --abort
@@ -1152,13 +1112,11 @@ git merge master #Ahora pasamos los cambios a la rama segunda.
 
 ### PORTAFOLIO
 
-<sub>
 Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 
 Dante Nicolás Martinez
 
 Parte 4:
-</sub>
 
 > Introducción
 
@@ -1170,10 +1128,8 @@ Parte 4:
 
 > PDF
 
-<sub>
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
 
 Profesor Ariel Betancud
-</sub>
