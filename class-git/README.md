@@ -324,9 +324,8 @@ Entonces tenemos el área de trabajo, cuando colocamos git add historia.txt pasa
 </sub>
 
 
-
-
 ## ¿Qué es Gitflow?
+
 <sub>
 Gitflow es un modelo alternativo de creación de ramas en Git en el que se utilizan ramas de función y varias ramas principales. Fue Vincent Driessen en nvie quien lo publicó por primera vez y quien lo popularizó.
 
@@ -353,14 +352,12 @@ Estas ramas tienen un principio y un fin, ya que son ramas que se mergean con la
 
 
 Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo más importante es saber cuando hacemos un merge, porque es posible que hayan archivos que rompan otros archivos, a esto se lo llama conflicto o bug.
+
+
+Hoy a sido un poco de teoría, repaso de todo lo que les dió la profe Naty.
+
+Profesor Ariel Betancud
 </sub>
-
-
-
-> Hoy a sido un poco de teoría, repaso de todo lo que les dió la profe Naty.
-
-> Profesor Ariel Betancud
-
 
 # CLASE 5 MIÉRCOLES 8 DE MAYO DEL 2024
 
