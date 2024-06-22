@@ -315,10 +315,11 @@ Profesor Ariel Betancud
 
 <sub>
 Tienes una carpeta donde están los archivos de tu proyecto o un directorio y allí tenemos el archivo historia.txt, cuando entramos por consola a ese archivo y creamos el git init, se crea un área en memoria ram que se llama staging, y el otro es el repositorio esta es la carpeta .git donde estarán todos los cambios al final del proyecto.
+</sub>
 
 ![Imagen de diagrama de gitflow](./img/git1.png)
 
-
+<sub>
 Entonces tenemos el área de trabajo, cuando colocamos git add historia.txt pasamos al staging o área de preparación, que hay que recordar que esto es en la memoria ram y luego con git commit -m "Mensaje" pasa al repositorio en la rama master, allí se genera un nombre llenos de letras y números, es el hash, el nombre del commit.
 </sub>
 
@@ -352,7 +353,6 @@ Estas ramas tienen un principio y un fin, ya que son ramas que se mergean con la
 
 
 Podemos tener tantas ramas como queramos, tantos repositorios como queramos, lo más importante es saber cuando hacemos un merge, porque es posible que hayan archivos que rompan otros archivos, a esto se lo llama conflicto o bug.
-
 </sub>
 
 
@@ -531,15 +531,17 @@ touch reset_file.txt
 git add reset_file.txt
 
 git commit -m"Iniciando el primer commit"
+```
 
-
-
+<sub>
 ¿Cómo funciona Git Reset en tu flujo de trabajo? 
 
 Git reset permite moverte entre diferentes commits para deshacer o rehacer cambios. Git guarda todo lo nuevo del repositorio como commits, que son instantáneas del estado del código en un momento dado y existen variaciones de este comando.
 
 Variaciones de Git Reset 
+</sub>
 
+```sh
 git reset --soft: Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit. 
 
 git reset --hard: Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial. 
@@ -592,6 +594,7 @@ La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, co
 Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 
 Dante Nicolás Martinez
+</sub>
 
 > Introducción
 
@@ -604,7 +607,7 @@ Dante Nicolás Martinez
 > PDF
 
 
-
+<sub>
 Revisar y ejecutar cada comando, hacerlo como practica
 
 Profesor Ariel Betancud
@@ -613,9 +616,6 @@ Profesor Ariel Betancud
 
 
 # CLASE 7 MIÉRCOLES 22 DE MAYO DEL 2024
-
-
-
 
 > Flujo de trabajo básico con un repositorio remoto parte 8
 
@@ -689,6 +689,7 @@ Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 Dante Nicolás Martinez
 
 Parte 2:
+</sub>
 
 > Introducción
 
@@ -700,7 +701,7 @@ Parte 2:
 
 > PDF
 
-
+<sub>
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
 
 Profesor Ariel Betancud
@@ -816,7 +817,7 @@ Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 Dante Nicolás Martinez
 
 Parte 2:
-
+</sub>
 
 > Introducción
 
@@ -827,8 +828,6 @@ Parte 2:
 
 
 > PDF
-
-</sub>
 
 ```sh
 ctrl + s 
@@ -880,33 +879,36 @@ Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requ
 Profesor Ariel Betancud
 </sub>
 
-
-
-
 # CLASE 9 MIÉRCOLES 5 DE JUNIO DEL 2024
 
 ### Fusión de ramas con Git merge parte 10
 
+<sub>
 La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
 
 Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
-
+</sub>
 
 ### Funcionamiento de Git merge
 
+<sub>
 Git merge fusiona secuencias de confirmaciones en un solo historial, generalmente para combinar dos ramas. Busca una confirmación de base común y genera una confirmación de fusión que representa la combinación de las dos ramas hasta el resultado final.
-
+</sub>
 
 ![Imagen de funcionamiento de git merge](./img/git2.jpeg)
 
 
 ### ¿Cómo unir dos ramas en git?
 
+<sub>
 Ahora bien, para combinar ramas en tu repositorio local, usa git checkout para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea git merge y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.
+</sub>
 
 ### ¿Cómo realizar un merge en git?
 
+<sub>
 Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando git merge seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama segunda, usa este comando:
+</sub>
 
 ```sh
 git checkout master
@@ -1030,6 +1032,7 @@ Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 Dante Nicolás Martinez
 
 Parte 4:
+</sub>
 
 > Introducción
 
@@ -1041,7 +1044,7 @@ Parte 4:
 
 > PDF
 
-
+<sub>
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
@@ -1157,6 +1160,7 @@ Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
 Dante Nicolás Martinez
 
 Parte 4:
+</sub>
 
 > Introducción
 
@@ -1168,7 +1172,7 @@ Parte 4:
 
 > PDF
 
-
+<sub>
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
