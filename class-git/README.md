@@ -1068,15 +1068,11 @@ git checkout segunda #falta lo que cargamos en master
 git merge master #traemos los cambios desde la master y tenemos las dos ramas actualizadas
 ```
 
-<sub>
 Ahora vamos a crear un conflicto para ver como salimos de el, vamos a cargar datos nuevos creando archivos html y css estando en la rama segunda, y también vamos a hacer lo mismo estando en la master y veremos como lo solucionamos.
-
 
 Abrimos el html y modificamos estando en la rama segunda
 
-
 Luego commiteamos en la rama segunda y pasamos a la rama master, guardar y commitear, hacer un merge estando en master: pongo en orden los comandos abajo.
-</sub>
 
 ```sh
 ctrl + s #Guardamos los cambios en la rama segunda, ponemos cambios en css
@@ -1092,12 +1088,10 @@ git commit -am "Agregue suscripción, cambie el código y puse todo azul en css"
 git merge segunda #Hacemos un merge estando en master y veremos el conflicto
 ```
 
-<sub>
 Para solucionar el conflicto podemos abrir el archivo con el editor de texto y modificar lo que nos este señalando y guardamos, esto en el css y en el html, lo podemos hacer desde VSC seleccionando: el cambio entrante.
 
 
 Debemos ahora commitear estos cambios, abajo pongo los comandos.
-</sub>
 
 ```sh
 git status
