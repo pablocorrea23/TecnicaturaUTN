@@ -6,7 +6,7 @@ suma_inpares = 0
 conteo_inpares = 0
 
 for i in range(n):
-  num = int(input("ingrese un numeros "))
+  num = int(input("ingrese un numero "))
 
   if num % 2 == 0:
      print("el numero es par")
