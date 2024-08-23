@@ -16,8 +16,11 @@ public class EjercicioWhile01 {
         }while(contador <= 3);
 
 
-        for(var i = 0; i < 3; i++){
+        for(var i = 0; i < 8; i++){
+            if(i % 2 == 0){
             System.out.println("i = " + i);
+            //break; corta la ejecucion en la primer vuelta
+            }
         }
     }
 }
