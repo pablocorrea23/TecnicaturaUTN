@@ -19,8 +19,15 @@ public class EjercicioWhile01 {
         for(var i = 0; i < 8; i++){
             if(i % 2 == 0){
             System.out.println("i = " + i);
-            //break; corta la ejecucion en la primer vuelta
+            break; //corta la ejecucion en la primer vuelta
             }
+        }
+
+        for(var i = 0; i < 7; i ++){
+            if (i % 2 != 0) {
+                continue; //vamos a la siguente iteración
+            }
+            System.out.println("a = " + i);
         }
     }
 }
